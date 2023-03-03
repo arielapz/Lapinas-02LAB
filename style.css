@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0),rgba(0, 0, 0, 0.5)),url("img/bg.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background: rgb(26, 43, 49);
+    font-weight: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+}
+
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar ul li a { 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: #55afe2;
+}
+
+.login-form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 15% auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+}
+
+.reg-form-box {
+    width: 380px;
+    height: 650px;
+    position: relative;
+    margin: 15% auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+}
+
+.input-group {
+    top: 30px;
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+    left: 30px;
+}
+
+.reg-input-group {
+    top: 25px;
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+    left: 30px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: aliceblue;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 20px 30px 30px 10px;
+    border: none;
+}
+
+.check-box {
+    margin: 25px 10px 30px 10px;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    bottom: 135px;
+    left: 30px;
+    position: absolute;
+}
+
+a {
+    color: white;
+    font-size: 80%;
+    margin: 25px 10px 30px 9px;
+}
+
+.text-alighment-center {
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+.font-size-title {
+    font-size: 15px;
+}
+
+.image-size {
+    width: 150px;
+    height: 100px;
+    margin-right: 0;
+}
+
+.form-image-size {
+    width: 180px;
+    height: 130px;
+    margin-left: 23%;
+}
+
+.home {
+    top: 8vh;
+    margin-bottom: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 55vw;
+    margin-right: 0;
+    position: relative;
+    left: 7.3vw;
+    top: 6vh;
+}
+
+.home-content {
+    position: relative;
+    top: 6vh;
+    left: 6vw;
+}
+
+.home-content h5 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: -1.5vh;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(1, 139, 139);
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-text-name {
+    text-align: center;
+    position: relative;
+    top: 23vh;
+    font-size: 15px;
+}
+
+.myportfolio {
+    position: relative;
+    margin-bottom: 42vh;
+}
+
+.myportfolio h2 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    margin-left: 47%;
+    font-weight: 500;
+}
+
+.myportfolio-box h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.myportfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-left: 28%;
+    gap: 3rem;
+}
+
+.myportfolio-container .myportfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.myportfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.myportfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+
+.myportfolio-box .myportfolio-layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #55afe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    color: white;
+}
+
+.myportfolio-box:hover .myportfolio-layer {
+    transform: translateY(0)
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: rgb(26, 43, 49);
+    font-weight: 500;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-right: 350px;
+    margin-left: 300px;
+    padding-top: 30px;
+}
